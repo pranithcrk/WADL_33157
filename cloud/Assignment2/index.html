@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+            href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+    
+    
+    <title class="align-center">PINCODE APP</title>
+</head>
+<body>
+    <h1 id="error_head"  style="display: none"  value="{{ error }}">{{error}}</h1>
+    <div class="card">
+        <h2 style="text-align: center">Pincode App</h2>
+        <form action="" class="weatherText" id="weatherForm" method="post">
+            Location zip code:
+            <input type="text" name="zipcode" id="weatherInput" class="weatherText" >
+            <br>
+            <br>
+            <input type="submit" class="weatherText" id="weatherSubmit" value="Submit">
+        </form>
+    </div>
+    <script>
+        let err = document.getElementById("error_head")
+        function myFunction(){
+            alert("Enter a valid pincode");
+        }
+        if(err){
+            myFunction();
+        }
+    </script>
+
+  
+    
+</body>
+</html>
